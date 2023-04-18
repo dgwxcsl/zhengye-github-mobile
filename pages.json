@@ -1,0 +1,100 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+		    "path" : "pages/home/home",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}
+        ,{
+            "path" : "pages/test/test",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/test2/test2",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/test3/test3",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/test4/test4",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+	// "tabBar": {
+	// 		"color":"#8a8a8a",
+	// 		"selectedColor":"#d4237a",
+	// 		"borderStyle":"black",
+	// 		"backgroundColor":"#ffffff",
+	// 		"list": [
+	// 			{	
+	// 				"iconPath":"static/used.png",
+	// 				"selectedIconPath":"static/used.png",
+	// 				"text":"首页",
+	// 				"pagePath":"pages/home/home"
+	// 			},
+	// 			{
+	// 				"iconPath":"static/used.png",
+	// 				"selectedIconPath":"static/used.png",
+	// 				"text":"搜索",
+	// 				"pagePath":"pages/test/test"
+	// 			},
+	// 			{
+	// 				"pagePath":"pages/test2/test2",
+	// 				"text":"排行榜",
+	// 				"iconPath":"static/work.png",
+	// 				"selectedIconPath":"static/work.png"
+	// 			},
+	// 			{
+	// 				"pagePath":"pages/test3/test3",
+	// 				"text":"咚咚抢",
+	// 				"iconPath":"static/used.png",
+	// 				"selectedIconPath":"static/used.png"
+	// 			},
+	// 			{
+	// 				"pagePath":"pages/test4/test4",
+	// 				"text":"我的",
+	// 				"iconPath":"static/used.png",
+	// 				"selectedIconPath":"static/used.png"
+	// 			}
+	// 		]	
+	// 	 }
+}
