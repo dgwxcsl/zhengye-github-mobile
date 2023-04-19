@@ -1,6 +1,7 @@
 <template>
 	<view class="content">
-		<view class="head" :style="{ paddingTop: paddingTopNum + 'px' }">
+		<!-- <view class="head" :style="{ paddingTop: paddingTopNum + 'px' }"> -->
+		<view class="head">
 			<!-- 标题插槽 -->
 			<slot name="title">
 				<view style="width: 90%;text-align: center;">早上好！张三先生</view>
@@ -9,7 +10,7 @@
 		</view>
 		<!-- <view style="height: 40rpx;"></view> -->
 		<view class="uni-margin-wrap">
-			<swiper class="swiper" circular :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval"
+			<swiper class="swiper" circular :indicator-dots="indicatorDots" :autoplay= "autoplay" :interval="interval"
 				:duration="duration">
 				<swiper-item v-for="(item, index) in imgArr" :key="index">
 					<image class="swiper-item" :src="item.img" mode=“widthFix”></image>
