@@ -1,14 +1,17 @@
 <template>
 	<view class="content">
 		<!-- <view class="head" :style="{ paddingTop: paddingTopNum + 'px' }"> -->
-		<view class="head">
+		<!-- <view class="head"> -->
 			<!-- 标题插槽 -->
-			<slot name="title">
+<!-- 			<slot name="title">
 				<view style="width: 90%;text-align: center;">早上好！张三先生</view>
 				<image src="../../static/notice.png"></image>
-			</slot>
-		</view>
-		<!-- <view style="height: 40rpx;"></view> -->
+			</slot> -->
+		<!-- </view> -->
+		<!-- 防止顶到刘海屏等 -->
+		<view :style="`height: ${statusBarHeight}px;`" class="status-bar"></view>
+		<uni-nav-bar shadow left-icon="left" right-icon="notification-filled" title="早上好！张三先生" background-color="#000" color="aquamarine" height="100rpx"/>
+		<!-- <view style="height: 30px;"></view> -->
 		<view class="uni-margin-wrap">
 			<swiper class="swiper" circular :indicator-dots="indicatorDots" :autoplay= "autoplay" :interval="interval"
 				:duration="duration">
@@ -85,6 +88,8 @@
 		// },
 		data() {
 			return {
+				//状态栏高度
+				statusBarHeight: uni.getSystemInfoSync().statusBarHeight,
 				// 导航区高度
 				paddingTopNum: uni.getSystemInfoSync().statusBarHeight + 7,
 				// 内容区高度
@@ -132,6 +137,10 @@
 	.content {
 		background-color: #dfe6e8;
 	}
+// uni-page-head .uni-page-head {
+// 		height: 0vh!important;
+// 		padding: 0!important;
+// 	}
 	/* 自定义导航栏 */
 	.flex-c {
 		display: flex;
@@ -152,8 +161,8 @@
 		position: fixed;
 		width: 100%;
 		z-index: 999;
-		height: 30px;
-		line-height: 30px;
+		// height: 30px;
+		line-height: 8vh;
 		color: aquamarine;
 		font-size: 32rpx;
 		/* 设置背景为透明色 */
